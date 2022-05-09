@@ -24,10 +24,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.guacamole</groupId>
-    <artifactId>guacamole-auth-quickconnect</artifactId>
+    <artifactId>kypo-guacamole-quickconnect</artifactId>
     <packaging>jar</packaging>
     <version>1.3.0</version>
-    <name>guacamole-auth-quickconnect</name>
+    <name>kypo-guacamole-quickconnect</name>
     <url>http://guacamole.apache.org/</url>
 
     <properties>
@@ -155,6 +155,8 @@
                     <excludes>
                         <exclude>**/*.json</exclude>
                         <exclude>src/licenses/**/*</exclude>
+                        <exclude>src/main/java/org/apache/guacamole/auth/quickconnect/QuickSimpleConnection.java</exclude>
+                        <exclude>README.md</exclude>
                         <exclude>src/main/resources/templates/*.html</exclude>
                     </excludes>
                 </configuration>
