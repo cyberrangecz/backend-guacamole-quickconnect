@@ -1,6 +1,6 @@
-# KYPO Guacamole Quickconnect Extension
+# CyberRangeCZ Platform Guacamole Quickconnect Extension
 
-*kypo-guacamole-quickconnect* is a modification of the originally developed [guacamole-auth-quickconnect](https://github.com/apache/guacamole-client/tree/master/extensions/guacamole-auth-quickconnect) extension for guacamole client. It provides a connection bar on the Guacamole Client home page that allows users to type in the URI of a server to which they want to connect and the client will parse the URI and immediately establish the connection. The modified extension allows to specify guacamole proxy parameters (**guacd-hostname** and **guacd-port**) unlike original extension. 
+*crczp-guacamole-quickconnect* is a modification of the originally developed [guacamole-auth-quickconnect](https://github.com/apache/guacamole-client/tree/master/extensions/guacamole-auth-quickconnect) extension for guacamole client. It provides a connection bar on the Guacamole Client home page that allows users to type in the URI of a server to which they want to connect and the client will parse the URI and immediately establish the connection. The modified extension allows to specify guacamole proxy parameters (**guacd-hostname** and **guacd-port**) unlike original extension. 
 
 ## Build and usage
 
@@ -16,5 +16,5 @@ The .jar file will be created in the `/target` directory.
 
 ```
 volumes:
-      - {path to kypo-guacamole-quickconnect-1.3.0.jar}:/opt/guacamole/postgresql/guacamole-auth-quickconnect-1.3.0.jar
+      - {path to crczp-guacamole-quickconnect-1.3.0.jar}:/opt/guacamole/postgresql/guacamole-auth-quickconnect-1.3.0.jar
 ```
