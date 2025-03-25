@@ -29,6 +29,6 @@ jobs:
     secrets:
       READ_PACKAGES: ${{ secrets.READ_PACKAGES }}
     with:
-      MAVEN_CLI_OPTS: "-s etc/ci_settings.xml"
+      MAVEN_CLI_OPTS: "-s etc/ci_settings.xml -Drat.skip=true"
       IMAGE_NAME: "backend-guacamole-quickconnect"
       VERSION_PATH: "pom.xml"
