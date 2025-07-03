@@ -21,39 +21,39 @@
  * The controller for making ad-hoc (quick) connections
  */
 angular.module('guacQuickConnect').controller('quickconnectController', ['$scope', '$injector',
-        function manageConnectionController($scope, $injector) {
+    function manageConnectionController($scope, $injector) {
 
-    // Required types
-    var ClientIdentifier    = $injector.get('ClientIdentifier');
+        // Required types
+        var ClientIdentifier    = $injector.get('ClientIdentifier');
 
-    // Required services
-    var $location            = $injector.get('$location');
-    var guacNotification     = $injector.get('guacNotification');
-    var quickConnectService  = $injector.get('quickConnectService');
+        // Required services
+        var $location            = $injector.get('$location');
+        var guacNotification     = $injector.get('guacNotification');
+        var quickConnectService  = $injector.get('quickConnectService');
 
-    /**
-     * The URI that will be passed in to the extension to create
-     * the connection.
-     */
-    $scope.uri = null;
+        /**
+         * The URI that will be passed in to the extension to create
+         * the connection.
+         */
+        $scope.uri = null;
 
-    /**
-     * Saves the connection, creating a new connection or updating the existing
-     * connection.
-     */
-    $scope.quickConnect = function quickConnect() {
+        /**
+         * Saves the connection, creating a new connection or updating the existing
+         * connection.
+         */
+        $scope.quickConnect = function quickConnect() {
 
-        quickConnectService.createConnection($scope.uri)
-        .then(function createdConnection(connectionId) {
-            $location.url('/client/' + ClientIdentifier.toString({
-                dataSource : 'quickconnect',
-                type       : ClientIdentifier.Types.CONNECTION,
-                id         : connectionId
-            }));
-        }, guacNotification.SHOW_REQUEST_ERROR);
+            quickConnectService.createConnection($scope.uri)
+                .then(function createdConnection(connectionId) {
+                    $location.url('/client/' + ClientIdentifier.toString({
+                        dataSource : 'quickconnect',
+                        type       : ClientIdentifier.Types.CONNECTION,
+                        id         : connectionId
+                    }));
+                }, guacNotification.SHOW_REQUEST_ERROR);
 
-        return;
+            return;
 
-    };
+        };
 
-}]);
+    }]);

@@ -9,5 +9,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 This product includes software components (all components except QuickSimpleConnection) originally
 developed for Guacamole Client (https://github.com/apache/guacamole-client),
 licensed under the Apache 2.0 license. The licensing terms
-for Guacamole Client code can be found at:
-https://github.com/apache/guacamole-client/blob/master/LICENSE
+for Guacamole Client code can be found in file LICENCE-APACHE-2.0.txt

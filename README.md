@@ -12,9 +12,9 @@ mvn package
 
 The .jar file will be created in the `/target` directory. 
 
-2) Mount the built .jar file to [guacamole docker container](https://hub.docker.com/layers/guacamole/guacamole/guacamole/1.3.0/images/sha256-739cb6820ae884827ceaaa87b45b8802769649c848d737584aea79d999177dc3?context=explore) as follows 
+2) Mount the built .jar file to [guacamole docker container](https://hub.docker.com/layers/guacamole/guacamole/1.6.0/images/sha256-50484043eadd8d9562053940c0ed523dbddaf9086c370127b2f4acabb8bddddc) as follows 
 
 ```
 volumes:
-      - {path to crczp-guacamole-quickconnect-1.3.0.jar}:/opt/guacamole/postgresql/guacamole-auth-quickconnect-1.3.0.jar
+      - {path to crczp-guacamole-quickconnect-1.6.0.jar}:/opt/guacamole/postgresql/guacamole-auth-quickconnect-1.6s.0.jar
 ```
