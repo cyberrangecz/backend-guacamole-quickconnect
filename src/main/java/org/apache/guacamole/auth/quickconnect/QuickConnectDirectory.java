@@ -123,7 +123,7 @@ public class QuickConnectDirectory extends SimpleDirectory<Connection> {
         String name = parser.getName(config);
 
         // Create a new connection and set the parent identifier.
-        Connection connection = new SimpleConnection(name, newConnectionId, config, true);
+        Connection connection = new QuickSimpleConnection(name, newConnectionId, config, true);
         connection.setParentIdentifier(QuickConnectUserContext.ROOT_IDENTIFIER);
 
         // Place the object in this directory.
