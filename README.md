@@ -1,3 +1,5 @@
+> This repository has been archived. Ongoing development for Guacamole is now maintained in the [backend-guacamole](https://github.com/cyberrangecz/backend-guacamole) repository.
+
 # CyberRangeCZ Platform Guacamole Quickconnect Extension
 
 *crczp-guacamole-quickconnect* is a modification of the originally developed [guacamole-auth-quickconnect](https://github.com/apache/guacamole-client/tree/master/extensions/guacamole-auth-quickconnect) extension for guacamole client. It provides a connection bar on the Guacamole Client home page that allows users to type in the URI of a server to which they want to connect and the client will parse the URI and immediately establish the connection. The modified extension allows to specify guacamole proxy parameters (**guacd-hostname** and **guacd-port**) unlike original extension. 
