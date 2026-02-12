@@ -44,7 +44,7 @@ public class QuickConnectREST {
 
     /**
      * Construct a new QuickConnectREST class, taking in a
-     * QuickConnectDirectory for use with this class. 
+     * QuickConnectDirectory for use with this class.
      *
      * @param directory
      *     The QuickConnectDirectory object to associate with this
@@ -71,12 +71,11 @@ public class QuickConnectREST {
      */
     @POST
     @Path("create")
-    public Map<String, String> create(@FormParam("uri") String uri) 
+    public Map<String, String> create(@FormParam("uri") String uri)
             throws GuacamoleException {
 
-        return Collections.singletonMap("identifier",
-                directory.create(QCParser.getConfiguration(uri)));
- 
+        return Collections.singletonMap("identifier", directory.create(uri));
+
     }
 
 }
